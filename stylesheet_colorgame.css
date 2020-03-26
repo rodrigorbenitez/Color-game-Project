@@ -1,0 +1,114 @@
+body{background: #232323;}
+.square{
+    float: left;
+    width: 30%;
+    height:0;
+    padding-bottom: 30%;
+    margin:10px 1.666% ;
+    border-radius: 10px;
+}
+.centrarDiv{display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+#heading1{color: white;
+background: cornflowerblue;
+height: 20vh;
+text-transform: uppercase;
+text-align: center;
+display: block;
+font-size: 28px;
+}
+br {
+    display: block;
+    content: "";
+    margin-top: 0px;
+    margin-bottom: 0px;
+ }
+#colorDisplay{text-transform: uppercase;
+   font-size: 50px;
+}
+#contenedorBox{ max-width: 600px;
+margin: 0 auto;
+max-height: 600px;
+}
+#stripe{color: black;
+    background: white;
+    max-height: 600px;
+    display: flex;
+}
+.selected{background: cornflowerblue;
+    color: white;
+}
+.styleButtons{font-size: 16px;
+ width: 77px;
+ border-radius: 8px;
+ border: none;
+ cursor: pointer;
+ align-items: center;
+ justify-content: center;
+ text-transform: uppercase;
+ display: block;
+    float: left;
+}
+ .styleButtons:hover{
+    background-color:cornflowerblue;
+    color: white; 
+ }
+#reset{margin-right: 0px;
+    width: 154px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    display: block;
+    float: left;
+}
+#reset:hover{
+        background-color:cornflowerblue;
+        color: white;}
+#message{
+    font-size: 16px;
+    width: 130px;
+    display: inline-block;
+    text-align: center;
+}
+#contenedormsg{max-width: 190px;
+    float: left;
+    text-align: center;
+}
+div.square {
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+}
+.fadeOut{
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+  }
+
+  @media only screen and (max-width: 600px) {
+    #message{
+        font-size: 16px;
+        width: 80px;
+        display: inline-block;
+        text-align: center;}
+
+    #reset{width: 120px;}
+    .styleButtons{width: 50px;}
+    #colorDisplay{font-size: 40px;}
+}
+
+
+
+
+
