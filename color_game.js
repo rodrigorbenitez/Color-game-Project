@@ -1,5 +1,7 @@
 
-var colors=[]
+//-----------variables--------------------------------//
+
+var colors = []
 var numberOfSquares=6
 generateRandomColor()
 var $square=document.querySelectorAll(".square")
@@ -13,8 +15,11 @@ var $reset=document.querySelector("#reset")
 reset()
 var $playButtons=document.querySelectorAll(".styleButtons");
 hardEasyButtons()
-//funciones//
-//----------jugar a elegir colores------------//
+
+//functions//
+
+//----------play to choose colors------------//
+
 function play(){$square.forEach(function (element, index){
     element.style.background=colors[index];
     element.addEventListener("click", function(){
@@ -28,8 +33,12 @@ function play(){$square.forEach(function (element, index){
          
          document.querySelector("#message").textContent="try again";}
     });
-  })};
+})
+};
+
+
 //----------colores------------//
+
 function changeColors(pickedColor){
     for(var i=0; i<$square.length; i++){$square[i].style.background=pickedColor;}
         }
@@ -46,8 +55,12 @@ function init(){
              if(numberOfSquares==3){for(j=3; j<6; j++){$square[j].style.display="none"}}
         pickedColor=colors[pickColor(0,colors.length-1)]
         $colorDisplay.textContent=pickedColor;
-        document.querySelector("h1").style.background="cornflowerblue";}}
+        document.querySelector("h1").style.background = "cornflowerblue";
+    }
+}
+
 //-------buttons--------//
+
 function reset(){
     $reset.addEventListener("click", function(){
         document.querySelector("#reset").textContent="New Colors";
