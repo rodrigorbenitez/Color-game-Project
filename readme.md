@@ -2,7 +2,7 @@
 
 Brush up your skills in RGB color model with this fun and interactive game. Guess the RGB correct and win! Option to switch between 2 difficulty level.
 
-# URL DEMO: https://inspiring-thompson-01e36a.netlify.app/
+### URL demo: https://inspiring-thompson-01e36a.netlify.app/
 
 ## Getting Started
 
